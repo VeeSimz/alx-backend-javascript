@@ -1,6 +1,7 @@
-export default function createEmployeesObject(departmentName, employees) {
-  const object = {
-    [departmentName]: employees,
-  };
-  return object;
+export default function iterateThroughObject(reportWithIterator) {
+  const employees = [];
+  for (const item of reportWithIterator) {
+    employees.push(item);
+  }
+  return employees.join(' | ');
 }
