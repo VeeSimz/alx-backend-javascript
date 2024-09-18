@@ -4,7 +4,7 @@ process.stdin.on('readable', () => {
   const msg = process.stdin.read();
   if (msg !== null) {
     process.stdout.write(`Your name is: ${msg}`);
-    }
+  }
 });
 
 process.stdin.on('end', () => {
